@@ -11,10 +11,10 @@ const convertData = (input) => {
   return input.map(({ gender, x, y }) => {
     return {
       color: colors[gender],
-      gender,
+      gender,//性別
       bmi: x / (y / 100) ** 2,//BMIを求める
-      weight: x,
-      height: y,
+      weight: x,//体重
+      height: y,//身長
     };
   });
 };
